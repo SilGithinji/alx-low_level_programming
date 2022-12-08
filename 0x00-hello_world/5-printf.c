@@ -1,9 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * 
  * Description: 'print text and start new line'
- * 
  * Return: Always 0 (Success)
  */
 int main(void)
