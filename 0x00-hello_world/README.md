@@ -1,1 +1,1 @@
- a script that compiles a C file and creates an executable named cisfun
+a C program that prints the size of various types on the computer it is compiled and run on
