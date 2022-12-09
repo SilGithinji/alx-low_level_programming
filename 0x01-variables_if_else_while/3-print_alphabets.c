@@ -13,11 +13,11 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		for (I = 0; I < 26; I++)
-		{
-			putchar(ALP[I]);
-		}
 		putchar(alp[i]);
+	}
+	for (I = 0; I < 26; I++)
+	{
+		putchar(ALP[I]);
 	}
 	putchar('\n');
 	return (0);
