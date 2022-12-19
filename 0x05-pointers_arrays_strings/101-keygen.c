@@ -10,16 +10,23 @@
  */
 int main(void)
 {
-	int sch, add;
+	int sch, add, p;
+	int get[100];
 
 	srand(time(NULL));
 	add = 0;
-	while (add <= 2645)
+	for (sch = 0; sch < 100; sch++)
 	{
-		sch = (rand() % 128);
-		add += sch;
-		printf("%c", sch);
+		get[sch] = rand() % 78;
+		add += (get[sch] + '0');
+		putchar(get[sch] + '0');
+		if ((2772 - add) - '0' < 78)
+		{
+			p = 2772 - add - '0';
+			add += p;
+			putchar(p + '0');
+			break;
+		}
 	}
-	printf("%c", 2772 - add);
-	return (0);
+		return (0);
 }
