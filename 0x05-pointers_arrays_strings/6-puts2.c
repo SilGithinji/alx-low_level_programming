@@ -7,4 +7,16 @@
  */
 void puts2(char *str)
 {
+	int alp;
 
+	alp = 0;
+	while (str[alp] != '\0')
+	{
+		if (alp % 2 == 0)
+		{
+			_putchar(str[alp]);
+		}
+		alp++;
+	}
+	_putchar('\n');
+}
