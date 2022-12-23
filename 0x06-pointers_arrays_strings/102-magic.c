@@ -2,12 +2,12 @@
 
 int main(void)
 {
-	int v;
-	int b[5];
+	int n;
+	int a[5];
 	int *p;
 
-	b[2] = 1024;
-	p = &v;
+	a[2] = 1024;
+	p = &n;
 	/*
  * write your line of code here
  * Remember:
@@ -18,6 +18,6 @@ int main(void)
  */
 *(p + 5) = 98;
 	/* ... so that this prints 98\n */
-	printf("b[2] = %d\n", b[2]);
+	printf("a[2] = %d\n", a[2]);
 	return (0);
 }
