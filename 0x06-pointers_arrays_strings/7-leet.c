@@ -6,16 +6,18 @@
  */
 char *leet(char *n)
 {
-	int pab = 0, pabg;
-	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int pab, pabg;
+	char leet[] = "aAeEoOtTlL";
+	char leit[] = "4433007711";
 
-	while (n[++pab])
+	for (pab = 0; n[pab] != '\0'; pab++)
 	{
-		for (pabg = 0; pabg <= 7; pabg++)
+		for (pabg = 0; pabg < 10; pabg++)
 		{
-			if (n[pab] == leet[pabg] ||
-			n[pab] - 32 == leet[pabg])
-				n[pab] = pabg + '0';
+			if (n[pab] == leet[pabg])
+			{
+				n[pab] = leit[pabg];
+			}
 		}
 	}
 	return (n);
